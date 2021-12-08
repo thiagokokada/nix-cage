@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = {
-    homepage = https://github.com/corpix/nix-cage;
+    homepage = https://github.com/thiagokokada/nix-cage;
     description = "Sandboxed environments with nix-shell";
 
     longDescription = ''
