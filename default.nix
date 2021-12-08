@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {}, ... }:
 with pkgs; stdenv.mkDerivation rec {
   name = "nix-cage";
-  buildInputs = [ python36 bubblewrap nix ];
+  buildInputs = [ python3 bubblewrap nix ];
   nativeBuildInputs = [ makeWrapper ];
   src = ./.;
 
