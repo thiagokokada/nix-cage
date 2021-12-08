@@ -17,7 +17,7 @@ with pkgs; stdenv.mkDerivation rec {
     cp       $src/${name} $out/bin
     chmod +x $out/bin/${name}
 
-    wrapProgram $out/bin/${name} --prefix PATH : ${stdenv.lib.makeBinPath [
+    wrapProgram $out/bin/${name} --prefix PATH : ${lib.makeBinPath [
       bubblewrap
       nix
     ]}
