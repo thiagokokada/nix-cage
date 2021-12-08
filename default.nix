@@ -31,7 +31,7 @@ with pkgs; stdenv.mkDerivation rec {
       Sandboxed environments with bwrap and nix-shell
     '';
 
-    license = stdenv.lib.licenses.mit;
-    platforms = stdenv.lib.platforms.linux;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
   };
 }
