@@ -1,5 +1,7 @@
-let nixpkgs = <nixpkgs>; in
-with import nixpkgs {};
+{ pkgs ? import ./nixpkgs.nix { }, ... }:
+
+with pkgs;
+
 stdenv.mkDerivation {
   name = "nix-shell";
   buildInputs = [
@@ -8,7 +10,4 @@ stdenv.mkDerivation {
     python3
     jq
   ];
-  shellHook = ''
-    export NIX_PATH=nixpkgs=${nixpkgs}
-  '';
 }

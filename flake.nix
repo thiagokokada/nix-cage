@@ -22,5 +22,9 @@
         packages = {
           inherit (pkgs) nix-cage;
         };
+
+        devShell = import ./shell.nix {
+          inherit pkgs;
+        };
       });
 }
