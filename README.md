@@ -1,6 +1,8 @@
 nix-cage
 --------------
 
+[![ci](https://github.com/thiagokokada/nix-cage/actions/workflows/ci.yml/badge.svg)](https://github.com/thiagokokada/nix-cage/actions/workflows/ci.yml)
+
 Sandboxed environments with `bwrap` and `nix` package manager.
 
 ## Requirements
